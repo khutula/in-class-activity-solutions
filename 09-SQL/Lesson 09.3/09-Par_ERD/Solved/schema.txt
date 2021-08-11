@@ -1,0 +1,35 @@
+CREATE TABLE gym (
+	gym_id SERIAL PRIMARY KEY,
+	gym_name VARCHAR,
+	address VARCHAR,
+	size INT
+);
+
+CREATE TABLE trainers (
+	trainer_id SERIAL PRIMARY KEY,
+	first_name VARCHAR,
+	last_name VARCHAR,
+	gym_id INT,
+	FOREIGN KEY (gym_id) REFERENCES gym(gym_id)
+);
+
+CREATE TABLE members (
+	member_id SERIAL PRIMARY KEY,
+	first_name VARCHAR,
+	last_name VARCHAR,
+	age INT,
+	trainer_id INT,
+	FOREIGN KEY (trainer_id) REFERENCES trainers(trainer_id),
+	gym_id INT,
+	FOREIGN KEY (gym_id) REFERENCES gym(gym_id)
+);
+
+CREATE TABLE credit_cards (
+	credit_card_id SERIAL PRIMARY KEY,
+	number INT,
+	member_id INT,
+	FOREIGN KEY (member_id) REFERENCES members(member_id),
+	security_code INT,
+	exp_month INT,
+	exp_year INT
+);
