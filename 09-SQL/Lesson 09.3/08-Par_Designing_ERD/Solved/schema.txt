@@ -1,0 +1,32 @@
+Trainers as t
+-
+trainer_id SERIAL PK
+first_name VARCHAR
+last_name VARCHAR
+gym_id INT FK >- g.gym_id
+
+Members as m
+-
+member_id SERIAL PK
+first_name VARCHAR 
+last_name VARCHAR
+age INT
+trainer_id INT FK >- t.trainer_id
+gym_id INT FK >- g.gym_id
+
+Gym as g
+-
+gym_id SERIAL PK
+gym_name VARCHAR
+address VARCHAR
+size INT
+
+Credit_Cards as cc
+-
+credit_card_id SERIAL PK
+number INT
+member_id INT FK - m.member_id
+secutiry_code INT
+exp_month INT
+exp_year INT
+
