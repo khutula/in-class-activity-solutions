@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    color: rgb(69, 212, 141);
+}
+h2 {
+    color: midnightblue;
+}
+h3 {
+    color: indianred;
+}
+img {
+    box-shadow: 5px 5px grey;
+}
+
+section {
+    background-color: lavender;
+}
+p {
+    font-size: 25px;
+}
+
+ul {
+    border: black;
+    border-style: dashed;
+}
+body {
+    background-color: black;
+}
