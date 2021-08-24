@@ -1,0 +1,54 @@
+/* Add your styles here */
+.navbar {
+    background-color: #5191fd;
+    height: 60px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+ 
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 14px;
+    margin-left: 10px;
+    margin-right: 5px;
+    margin-top: 7px;
+    text-decoration: none;
+    background-color: white;
+  }
+
+.header {
+    position: relative;
+    height: 75px;
+    font-size: 75px;
+    background-color: #cdcdcd;
+    text-align: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.posts {
+    background-color: #f1f1f1;
+}
+
+.post {
+    width: 75%;
+    left: 12.5%;
+    position: relative;
+    padding-top: 50px;
+}
+
+h3 {
+    font-size: 25px;
+}
