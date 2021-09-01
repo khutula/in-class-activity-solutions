@@ -1,0 +1,10 @@
+1630465851628	geckodriver	INFO	Listening on 127.0.0.1:54345
+1630465854958	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\khutula\\AppData\\Local\\Temp\\rust_mozprofileeBR1yG"
+1630465856331	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\khutula\\AppData\\Local\\Temp\\rust_mozprofileeBR1yG\\search.json.mozlz4", (void 0)))
+1630465864379	Marionette	INFO	Listening on port 51292
+1630465864642	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1630465867504	Marionette	INFO	Stopped listening on port 51292
+JavaScript error: resource:///modules/Interactions.jsm, line 209: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+JavaScript error: , line 0: OperationError: Could not move temporary file(C:\Users\khutula\AppData\Local\Temp\rust_mozprofileeBR1yG\sessionCheckpoints.json.tmp) to destination(C:\Users\khutula\AppData\Local\Temp\rust_mozprofileeBR1yG\sessionCheckpoints.json)
